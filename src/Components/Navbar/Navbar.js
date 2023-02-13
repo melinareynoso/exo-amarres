@@ -1,4 +1,4 @@
-import logo from "../images/logo.JPG";
+import logo from "../../images/logo.JPG";
 
 
 
