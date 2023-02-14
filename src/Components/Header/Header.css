@@ -1,0 +1,113 @@
+@import url('https://fonts.cdnfonts.com/css/berkshire-swash');
+@import url('https://fonts.cdnfonts.com/css/cinzel-decorative');
+
+                
+
+.header {
+height: 100vh;
+max-height: 900px;
+background: url('../../images/main.jpeg') no-repeat 50% fixed;
+  background-size: auto;
+background-size: cover;
+min-height: 750px;
+}
+
+.header .overlay {
+    height: 100%;
+    background: rgba(33,37,41,.85);
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+.header .display-2{
+    margin-bottom: 5px;
+    color: #fff !important;
+    font-family: 'Berkshire Swash', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+.header figure{
+box-sizing: border-box;
+display: inline-block;
+overflow: hidden;
+width: initial;
+height: initial;
+background:none;
+width: 180px;
+height: 180px;
+opacity: 1;
+border: 0;
+margin: 0;
+padding: 0;
+position: relative;
+max-width: 100%;
+}
+
+.header img{
+display: block;
+max-width: 100%;
+width: initial;
+height: initial;
+  }
+
+
+
+
+
+  header span{
+box-sizing: border-box;
+display: inline-block;
+overflow: hidden;
+width: initial;
+height: initial;
+background: none;
+opacity: 1;
+border: 0;
+margin: 0;
+padding: 0;
+position: relative;
+max-width: 100%;
+  }
+
+  header p{
+    color: rgba(255, 255, 255, 0.455) !important;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: "Cinzel Decorative", Courier;
+                                                
+  }
+
+  header a{
+    font-family: "Cinzel Decorative";
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.455) !important;
+    text-decoration:none;
+  }
+
+ul{
+    text-decoration:none;
+    list-style-type: none;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+
+.btn_navbar{
+    
+    background-color: green;
+    display: inline-block;
+    border: 1px solid transparent;
+    padding: .4rem .3rem;
+    line-height: 2;
+    border-radius: .2rem;
+}
+
+#whatsapp-icon{
+    padding-right: 10px;
+}

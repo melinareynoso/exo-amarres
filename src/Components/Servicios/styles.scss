@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+.container {
+    height: 100vh;
+  }
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    height: 60%;
+    
+
+    & img {
+        height: 150px;
+        width: 150px;
+        border-radius: 100%;
+        border: 5px solid #ffffff47 !important;
+      }
+}
+
+
+
+
+
+.text-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 40%;    
+}
+
+.text-container h4 {
+    min-height: 62px;
+    font-size: 1.6rem;
+    font-family: "Berkshire Swash",sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+}
+  
+  .flip-card-outer {
+    width: 300px;
+    height: 400px;
+    margin: 25px 0;
+  
+    &.focus-trigger:focus {
+      outline: 5px solid greenyellow;
+      outline-offset: 5px;
+    }
+  
+    .flip-card-inner {
+      transform-style: preserve-3d;
+      transition: .5s linear .1s;
+      position: relative;
+      width: inherit;
+      height: inherit;
+  
+      &.hover-trigger:hover {
+        transform: rotateY(180deg);
+      }
+  
+      &.showBack {
+        transform: rotateY(180deg);
+      }
+    
+      .card {
+        background: none;
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    
+        &.front {
+          transform: rotateY(0);
+          color: #fff;
+        }
+    
+        &.back {
+          font-family: Cinzel Decorative;
+          font-size: smaller;
+          transform: rotateY(180deg);
+          color: rgba(255, 255, 255, 0.455) !important;
+        }
+      }
+    }
+  }
