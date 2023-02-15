@@ -1,7 +1,6 @@
 import React from "react";
 import FlipCard from "./FlipCard";
 import './Servicios.css'
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.scss";
 
 import amarre_amor from "../../images/amarre_de_amor.webp"
@@ -45,10 +44,13 @@ const cards = [
 export default function Services(){
     return(
         <section id="servicios">
-		    <h2 class="section-title py-5">Nuestros servicios</h2>
-            <div className="container">
-                <div className="row h-100">
-                    <div class="col d-flex flex-column flex-md-row justify-content-around align-items-center">
+		    <h2 className="section-title py-5">
+          Nuestros servicios
+        </h2>
+          <div className="container d-flex justify-content-center align-items-center h-100" >
+                <div className="row mb-5">
+
+                   <div className="col-md-4 mt-5" >  
                      {cards.map((card) => (
                         <FlipCard key={card.id} card={card} />
                     ))}

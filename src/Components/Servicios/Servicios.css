@@ -13,3 +13,8 @@
     color: white;
 }
 
+.card-center{
+    max-width: 900px;
+    text-align: center;
+  }
+

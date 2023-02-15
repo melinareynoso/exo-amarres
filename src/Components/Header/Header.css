@@ -74,6 +74,7 @@ max-width: 100%;
   }
 
   header p{
+    margin-top: 20px;
     color: rgba(255, 255, 255, 0.455) !important;
     font-weight: 400;
     font-size: 1rem;
@@ -86,6 +87,10 @@ max-width: 100%;
     font-size: 10px;
     color: rgba(255, 255, 255, 0.455) !important;
     text-decoration:none;
+  }
+
+  ol, ul {
+    padding-left: 0rem;
   }
 
 ul{
@@ -109,5 +114,6 @@ ul{
 }
 
 #whatsapp-icon{
+    font-size: 25px;
     padding-right: 10px;
 }

@@ -10,17 +10,6 @@ function FlipCard({ card }) {
     }
   }
 
-  function handleFocus() { 
-    if (card.variant === "focus") { 
-      setShowBack(true); 
-    } 
-  } 
-
-  function handleBlur() { 
-    if (card.variant === "focus") { 
-      setShowBack(false); 
-    } 
-  } 
 
   return (
     <div
@@ -51,7 +40,9 @@ function FlipCard({ card }) {
         </div>
         
         <div className="card back">
+          <div className="card-body" > 
             <p className="">{card.back}</p>
+          </div>
         </div>
       </div>
     </div>
