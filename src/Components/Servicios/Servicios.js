@@ -1,6 +1,7 @@
 import React from "react";
 import FlipCard from "./FlipCard";
 import './Servicios.css'
+import { FaWhatsapp } from 'react-icons/fa'
 import "./styles.scss";
 
 import amarre_amor from "../../images/amarre_de_amor.webp"
@@ -44,19 +45,27 @@ const cards = [
 export default function Services(){
     return(
         <section id="servicios">
-		    <h2 className="section-title py-5">
-          Nuestros servicios
-        </h2>
-          <div className="container d-flex justify-content-center align-items-center h-100" >
-                <div className="row mb-5">
-
-                   <div className="col-md-4 mt-5" >  
+		    <h2 class="section-title py-5">Nuestros servicios</h2>
+            <div className="container">
+                <div className="row h-100">
+                    <div class="col d-flex flex-column flex-md-row justify-content-around align-items-center">
                      {cards.map((card) => (
                         <FlipCard key={card.id} card={card} />
                     ))}
                     </div>
                 </div>
             </div>
+
+            <a rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5493513289063" class="btn-wsp" target="_blank"> 
+                <FaWhatsapp id="whatsapp-icon-float"/>
+	          </a>
+
+
+            <a rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5493513289063" class="btn-wsp2" target="_blank"> 
+               <h6 id= "meliteamo">meli te amo</h6>
+	          </a>
+
+            
 	    </section>
     )
 }
