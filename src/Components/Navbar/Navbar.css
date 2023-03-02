@@ -1,11 +1,145 @@
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-    vertical-align: baseline;
+#logo-sup {
+  width: 20%;
+  margin: 3%;
+}
+
+
+
+#menu-sup {
+  position: fixed;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  min-height: 140px;
+  background-color: #3f3045;
+}
+
+#links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#center{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#left {
+  visibility: hidden;
+}
+
+.nav-btn {
+  display: none;
+}
+
+header nav a {
+  color: white;
+  font-size: 18px;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+header .nav-btn {
+  color: white;
+  background-color: #3f3045;
+}
+
+h1 {
+  font-family: 'Berkshire Swash', sans-serif;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+  header .nav-btn {
+    display: flex;
+    left: 15;
+    visibility: visible;
+    opacity: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.7rem;
+    min-height: 15%;
   }
 
-.navbar {
-    background-color: red;
+  #links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    top: 17%;
+    height: 60%;
+  }
+
+  header nav a {
+    color: white;
+    font-size: 18px;
+    margin: 10%;
+
+  }
+
+  #left {
+    display: flex;
+    margin-left: 5%;
+    flex-direction: column;
+    visibility: visible;
+  }
+
+  #center {
+    display: none;
+  }
+
+  #rigth {
+    display: flex;
+    margin-right: 5%;
+    flex-direction: column;
+  }
+
+
+  #menu-sup {
+    display: flex;
+    flex-direction: row;
+    min-height: 17%;
+  }
+
+  header nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #3f3045;
+    transition: 1s;
+    transform: translateX(+110vh);
+  }
+
+  header .responsive_nav {
+    transform: none;
+  }
+
+  nav .nav-close-btn {
+    position: absolute;
+    top: 4%;
+    right: 8%;
+    color: white;
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+  }
+
+
 }

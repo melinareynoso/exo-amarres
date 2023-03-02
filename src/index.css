@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cinzel+Decorative&display=swap');
+
+
+
 body {
-  font-family: Cinzel Decorative;
+  font-family: 'Berkshire Swash', cursive;
+  font-family: 'Cinzel Decorative', cursive;
+  font-family: "Proxima Nova";
   color: #f8f9fa;
-  background: #3f3045;
+  background: linear-gradient(#3f3045, pink);
+  /* background: #3f3045; */
   box-sizing: border-box;
 }
 
@@ -9,3 +16,5 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+

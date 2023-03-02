@@ -1,13 +1,11 @@
 @import url('https://fonts.cdnfonts.com/css/berkshire-swash');
-@import url('https://fonts.cdnfonts.com/css/cinzel-decorative');
 
-                
 
 .header {
 height: 100vh;
 max-height: 900px;
-background: url('../../images/main.jpeg') no-repeat 50% fixed;
-  background-size: auto;
+background: url('../../images/principal2.png') no-repeat 48% fixed ;
+background-size: auto;
 background-size: cover;
 min-height: 750px;
 }
@@ -22,40 +20,27 @@ min-height: 750px;
     flex-direction: column;
   }
 
-.header .display-2{
-    margin-bottom: 5px;
+.header #titulo{
     color: #fff !important;
     font-family: 'Berkshire Swash', sans-serif;
     font-size: 3.5rem;
-    font-weight: 400;
 }
 
-.header figure{
-box-sizing: border-box;
-display: inline-block;
-overflow: hidden;
-width: initial;
-height: initial;
-background:none;
+.header #logo-inicio{
 width: 180px;
-height: 180px;
-opacity: 1;
-border: 0;
-margin: 0;
-padding: 0;
-position: relative;
-max-width: 100%;
 }
 
-.header img{
-display: block;
-max-width: 100%;
-width: initial;
-height: initial;
-  }
 
 
 
+#container-main{
+  height: 55%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
 
 
   header span{
@@ -78,42 +63,61 @@ max-width: 100%;
     color: rgba(255, 255, 255, 0.455) !important;
     font-weight: 400;
     font-size: 1rem;
-    font-family: "Cinzel Decorative", Courier;
-                                                
+    font-family: 'Proxima Nova';                                              
+  }
+
+  #frase{
+    margin: 20px;
+    color: rgba(255, 255, 255, 0.455) !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'Proxima Nova';                                              
   }
 
   header a{
-    font-family: "Cinzel Decorative";
+    font-family: 'Proxima Nova';
     font-size: 10px;
-    color: rgba(255, 255, 255, 0.455) !important;
+    /* color: rgba(255, 255, 255, 0.455) !important; */
     text-decoration:none;
   }
+
+
 
   ol, ul {
     padding-left: 0rem;
   }
 
-ul{
-    text-decoration:none;
-    list-style-type: none;
-    font-size: 12px;
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-}
-
-
 .btn_navbar{
-    
-    background-color: green;
-    display: inline-block;
-    border: 1px solid transparent;
-    padding: .4rem .3rem;
-    line-height: 2;
-    border-radius: .2rem;
+  background-color: #4dc247;
+  color: white;
+  opacity: 100;
+  font-size: 150%;
+  display: inline-flex;
+  justify-content: space-around;
+  border: 1px solid transparent;
+  padding: 0.2rem;
+  line-height: 2;
+  border-radius: 2rem;
+  align-items: center; 
 }
+
+.btn_navbar:hover{
+  color: #4dc247;
+  background-color:white;
+  }
 
 #whatsapp-icon{
     font-size: 25px;
-    padding-right: 10px;
+margin: 0 5px 0 5px;
+
 }
+
+#contact{
+  margin: 0 5px 0 0;
+  color: white;
+  font-weight: normal;
+  }
+
+  #contact:hover{
+    color: #4dc247;
+    }

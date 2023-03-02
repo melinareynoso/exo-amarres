@@ -10,37 +10,33 @@ function FlipCard({ card }) {
     }
   }
 
-
   return (
     <div
-      tabIndex={card.id} 
-      className={cn("flip-card-outer", { 
-        "focus-trigger": card.variant === "focus" 
-      })} 
+      tabIndex={card.id}
+      className={cn("flip-card-outer", {
+        "focus-trigger": card.variant === "focus",
+      })}
       onClick={handleClick}
-      
     >
       <div
         className={cn("flip-card-inner", {
           showBack,
-          "hover-trigger": card.variant === "hover"
+          "hover-trigger": card.variant === "hover",
         })}
       >
         <div className="card front">
-
           <div className="card-body d-flex flex-column justify-content-center align-items-center">
-            <div className="img-container" >
-              <img src={card.image} />
+            <div className="img-container">
+              <img alt="" src={card.image} />
             </div>
             <div className="card-body">
-                <h4>{card.front}</h4>
-            </div>  
+              <h4>{card.front}</h4>
+            </div>
           </div>
-
         </div>
-        
+
         <div className="card back">
-          <div className="card-body" > 
+          <div className="card-body">
             <p className="">{card.back}</p>
           </div>
         </div>
