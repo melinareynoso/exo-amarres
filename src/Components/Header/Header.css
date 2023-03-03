@@ -58,7 +58,7 @@ position: relative;
 max-width: 100%;
   }
 
-  header p{
+  #frase{
     margin-top: 20px;
     color: rgba(255, 255, 255, 0.455) !important;
     font-weight: 400;
