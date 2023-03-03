@@ -54,10 +54,10 @@ export default function Navbar() {
             <p>Inicio</p>
           </a>
           <a href="#!">
-            <p>Nuestro Servicios</p>
+            <p>Servicios</p>
           </a>
-          <a href="#!">
-            <p>Nuestros Especialistas</p>
+          <a href="https://api.whatsapp.com/send?phone=5493541392076">
+            <p>Contactános</p>
           </a>
     
         </nav>
