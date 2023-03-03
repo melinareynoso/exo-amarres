@@ -1,0 +1,104 @@
+@import url('https://fonts.cdnfonts.com/css/berkshire-swash');
+
+
+.esp-container{
+    overflow: hidden;
+    background-color: #3f3045 !important;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.esp-container h2{
+    font-family: 'Berkshire Swash', sans-serif;
+    color:rgb(255, 255, 255);
+    margin-bottom: 3rem !important;
+    margin-top: 3rem !important;
+    font-size: 3.5rem;
+}
+
+.esp-container figure {
+    width: fit-content;
+    display: inline-block;
+}
+
+.esp-container img{
+    max-height: 300px;
+    max-width: 300px;
+    width: 100%;
+}
+
+.esp-container h3{
+    font-size: 1.85rem;
+    margin-bottom: .5rem;
+    font-family: Berkshire Swash,sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.testimonial-body{
+    margin-top: 2rem !important;
+    margin-bottom: 3rem !important;
+    position: relative;
+    padding: 1rem;
+    border: 2px solid #495057;
+    border-top-color: rgb(73, 80, 87);
+    border-top-color: #ff214f;
+    border-radius: .2rem;
+    margin-top: 30px;
+}
+
+.testimonial-body p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: Cinzel Decorative;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #f8f9fa !important;
+}
+
+.testimonial-body::after{
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    border-radius: .2rem 0 0 0;
+    border-color: #ff214f;
+    border-style: solid;
+    border-width: 2px 0 0 2px;
+    transform: rotate(45deg) translateX(-50%);
+    background: #343a40;
+}
+
+.testimonial-row{
+    margin-top: 1rem !important;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+.testimonial-1{
+    margin-top: 1rem !important;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+@media (max-width: 768px){
+    .testimonial-1{
+        margin-top: 0rem !important;
+        margin-bottom: 0rem !important;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
