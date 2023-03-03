@@ -63,19 +63,19 @@ max-width: 100%;
     color: rgba(255, 255, 255, 0.455) !important;
     font-weight: 400;
     font-size: 1rem;
-    font-family: 'Proxima Nova';                                              
+    font-family: 'Cinzel Decorative';                                              
   }
 
   #frase{
     margin: 20px;
-    color: rgba(255, 255, 255, 0.455) !important;
+    color: rgba(255, 255, 255, 0.777) !important;
     font-weight: bold;
     font-size: 1.5rem;
-    font-family: 'Proxima Nova';                                              
+    font-family: 'Cinzel Decorative';                                              
   }
 
   header a{
-    font-family: 'Proxima Nova';
+    font-family: 'Cinzel Decorative';
     font-size: 10px;
     /* color: rgba(255, 255, 255, 0.455) !important; */
     text-decoration:none;
