@@ -21,10 +21,10 @@
 
 
 #links {
-  display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  display: flex;
+  justify-content: space-between;
   
 }
 
@@ -71,8 +71,8 @@
 }
 
 header nav a {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 15px;
+  flex-basis: 33.33%;
   color: white;
   font-size: 13px;
 }
@@ -93,6 +93,16 @@ h1 {
 
 
 @media only screen and (max-width: 1024px) {
+
+  #span{
+    font-size: 1.5rem;
+    
+  }
+
+  #center{
+    width: 60%;
+  }
+  
   header .nav-btn {
     display: flex;
     left: 15;
@@ -129,14 +139,14 @@ h1 {
 
 
   #left {
-    display: flex;
+    display: none;
     margin-left: 5%;
     flex-direction: column;
     visibility: visible;
   }
 
   #center {
-    display: none;
+    /* display: none; */
   }
 
   #rigth {
@@ -180,8 +190,43 @@ h1 {
     margin: 0;
     font-size: 1rem;
   }
-
- 
-
-
 }
+
+
+/* prueba botoncio */
+
+
+  .nav__toggler {
+    margin: auto;
+    display: none;
+    }
+    .nav__toggler div {
+    display: block;
+    width: 2.5rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: rgb(204, 204, 204);
+    transition: 0.3s ease-in;
+    }
+
+
+    @media only screen and (max-width: 1024px) {
+
+      .nav__toggler {
+        display: block;
+        cursor: pointer;
+        }
+
+
+        .toggle .line1 {
+          transform: rotate(-45deg) translate(-4px, 5px);
+          }
+          .toggle .line2 {
+          opacity: 0;
+          }
+          .toggle .line3 {
+          transform: rotate(45deg) translate(-8px, -9px);
+          }
+        
+
+      }

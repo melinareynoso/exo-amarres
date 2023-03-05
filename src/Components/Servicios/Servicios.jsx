@@ -61,7 +61,7 @@ function Services() {
   };
 
   return (
-    <seccion className="Services">
+    <section id="Services" className="Services">
       <h2 id="title-services">Nuestros servicios</h2>
 
       <div className="card-container">
@@ -77,7 +77,7 @@ function Services() {
           />
         ))}
       </div>
-    </seccion>
+    </section>
   );
 }
 

@@ -1,16 +1,24 @@
 import logo from "../../images/logo_new.webp.png";
 import "./Navbar.css";
-import { useRef } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { useRef,useState } from "react";
+
 
 export default function Navbar() {
   const navRef = useRef();
-  const cerrar = useRef()
-  const abrir = useRef()
-
+  
   const showNavbar = () => {
-    navRef.current.classList.toggle("responsive_nav");
+
+    if (window.innerWidth <= 1024) {
+      navRef.current.classList.toggle("responsive_nav");
+
+    if (icon === "nav__toggler") {
+      setIcon("nav__toggler toggle");
+    } else setIcon("nav__toggler");
+    }
+  
   };
+
+  const [icon, setIcon] = useState("nav__toggler");
 
   window.onscroll = function() {
 		if (document.documentElement.scrollTop > 50) {
@@ -34,7 +42,7 @@ export default function Navbar() {
       document.getElementById("span").style.opacity = "";
 		}
 	}
-
+  
   return (
     <header id="menu-sup">
       <div id="left">
@@ -42,32 +50,32 @@ export default function Navbar() {
       </div>
 
       <div id="center">
-        <img id="logo-sup" alt="logo" src={logo} />
+          <img id="logo-sup" alt="logo" src={logo} />
         <span id="span">Templo Dharma</span>
       </div>
 
       <div id="rigth">
 
 
-        <nav id="links" ref={navRef}>
-          <a href="#!">
+        <nav id="links" ref={navRef} onClick={showNavbar} >
+          <a href="/#home">
             <p>Inicio</p>
           </a>
-          <a href="#!">
+          <a href="/#Services">
             <p>Nuestro Servicios</p>
           </a>
-          <a href="#!">
+          <a href="/#especialistas">
             <p>Nuestros Especialistas</p>
           </a>
-    
+          <a href="/#">
+            <p>testimonios</p>
+          </a>
         </nav>
-
-        <button ref={abrir} className="nav-btn" onClick={showNavbar}>
-          <FaBars />
-        </button>
-        <button ref={cerrar} className="nav-btn nav-close-btn" onClick={showNavbar}>
-            <FaTimes />
-        </button>
+        <div onClick={showNavbar} className={icon}>
+        			<div className="line1"></div>
+        			<div className="line2"></div>
+        			<div className="line3"></div>
+      			</div>
       </div>
     </header>
   );

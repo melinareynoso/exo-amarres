@@ -6,6 +6,10 @@
   text-align: center;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .fondo{
   background: linear-gradient(#3f3045, pink);
 
