@@ -2,7 +2,6 @@ import './App.css';
 import Header from './Components/Header/Header';
 import Services from './Components/Servicios/Servicios';
 import Especialistas from './Components/Especialistas/Especialistas';
-import Testimonios from './Components/Testimonios/Testimonios';
 import { FaWhatsapp } from "react-icons/fa";
 
 
@@ -18,7 +17,10 @@ function App() {
       <Header/>
       <Services/>
       <Especialistas/>
-      <Testimonios/>
+
+      
+      
+
     </div>
   );
 }
