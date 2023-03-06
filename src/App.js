@@ -2,6 +2,7 @@ import './App.css';
 import Header from './Components/Header/Header';
 import Services from './Components/Servicios/Servicios';
 import Especialistas from './Components/Especialistas/Especialistas';
+import Carousel from './Components/Carousel/Carousel';
 import { FaWhatsapp } from "react-icons/fa";
 
 
@@ -17,7 +18,7 @@ function App() {
       <Header/>
       <Services/>
       <Especialistas/>
-
+      <Carousel/>
       
       
 
