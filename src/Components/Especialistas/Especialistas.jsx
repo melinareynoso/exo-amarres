@@ -1,7 +1,7 @@
 import React from "react";
 import './Especialistas.css'
-import Karim from './karim_guerreiro.webp'
-import Navani from './navani_sheppra.webp'
+import karim from './karim_guerreiro.webp'
+import navani from './navani_sheppra.webp'
 import Narik from './narik_khatum.webp'
 
 
@@ -12,7 +12,7 @@ export default function Especialistas () {
         <section id="especialistas" className="esp-container">
             <h2 className="title" >Nuestros especialistas</h2>
             <figure>
-                 <img src={Karim} alt=""/>
+                 <img src={karim}/>
             </figure>
             <h3>Karim Guerreiro</h3>
             <div className="testimonial-body">
@@ -28,7 +28,7 @@ export default function Especialistas () {
             <div className="testimonial-row" >
                 <div className="testimonial-1">
                     <figure>
-                        <img src={Navani} alt=""/>
+                        <img src={navani}/>
                     </figure>
                     <h3>Navani Sheppra</h3>
                     <div className="testimonial-body">
@@ -37,7 +37,7 @@ export default function Especialistas () {
                 </div>
                 <div className="testimonial-1">
                     <figure>
-                        <img src={Narik} alt=""/>
+                        <img src={Narik}/>
                     </figure>
                     <h3>Narik Khatun</h3>
                     <div className="testimonial-body">

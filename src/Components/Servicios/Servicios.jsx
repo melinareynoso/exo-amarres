@@ -62,7 +62,7 @@ function Services() {
 
   return (
     <section id="Services" className="Services">
-      <h2 id="title">Nuestros servicios</h2>
+      <h2 id="title-services">Nuestros servicios</h2>
 
       <div className="card-container">
         {cardsData.map((card) => (
