@@ -5,11 +5,21 @@
 body {
   font-family: 'Berkshire Swash', cursive;
   font-family: 'Cinzel Decorative', cursive;
-  font-family: "Proxima Nova";
+  /* font-family: "Proxima Nova"; */
   color: #f8f9fa;
   background: linear-gradient(#3f3045, pink);
   /* background: #3f3045; */
   box-sizing: border-box;
+}
+
+h2 {
+  font-size: 4rem;
+  padding-bottom: 3rem;
+  padding-top: 6rem;
+  font-family: "Berkshire Swash", sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  color: white;
 }
 
 code {

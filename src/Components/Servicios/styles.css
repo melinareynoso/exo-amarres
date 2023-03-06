@@ -3,16 +3,6 @@
   text-align: center;
 }
 
-#title-services {
-  font-size: 4rem;
-  padding-bottom: 3rem !important;
-  padding-top: 6rem !important;
-  font-family: "Berkshire Swash", sans-serif;
-  font-weight: 500;
-  line-height: 1.2;
-  color: white;
-}
-
 .card-container {
   width: 90%;
   height: 70vh;
@@ -58,8 +48,7 @@
 }
 
 .card .front img {
-  width: 150px;
-  height: 150px;
+  width: 40%;
   margin-bottom: 10px;
   border-radius: 100%;
 }
