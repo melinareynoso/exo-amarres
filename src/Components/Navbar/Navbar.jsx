@@ -27,6 +27,7 @@ export default function Navbar() {
       document.getElementById("logo-sup").style.opacity = "0";
       document.getElementById("logo-sup").style.height = "0";
       document.getElementById("logo-sup").style.width = "0";
+      document.getElementById("logo-sup").style.display = "none";
       document.getElementById("span").style.height = "100%";
       document.getElementById("span").style.transform = "translateY(0%)";
       document.getElementById("span").style.opacity = "1";
@@ -40,6 +41,8 @@ export default function Navbar() {
       document.getElementById("span").style.height = "";
       document.getElementById("span").style.transform = "";
       document.getElementById("span").style.opacity = "";
+      document.getElementById("logo-sup").style.display = "flex";
+
 		}
 	}
   
@@ -58,17 +61,17 @@ export default function Navbar() {
 
 
         <nav id="links" ref={navRef} onClick={showNavbar} >
-          <a href="/#home">
+          <a href="/#Inicio">
             <p>Inicio</p>
           </a>
-          <a href="/#Services">
-            <p>Nuestro Servicios</p>
+          <a href="/#Servicios">
+            <p>Servicios</p>
           </a>
-          <a href="/#especialistas">
-            <p>Nuestros Especialistas</p>
+          <a href="/#Especialistas">
+            <p>Especialistas</p>
           </a>
-          <a href="/#">
-            <p>testimonios</p>
+          <a href="/#Testimonios">
+            <p>Testimonios</p>
           </a>
         </nav>
         <div onClick={showNavbar} className={icon}>

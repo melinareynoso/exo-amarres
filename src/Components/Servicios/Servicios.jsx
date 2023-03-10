@@ -61,7 +61,7 @@ function Services() {
   };
 
   return (
-    <section id="Services" className="Services">
+    <section id="Servicios" className="Services">
       <h2 id="title-services">Nuestros servicios</h2>
 
       <div className="card-container">
@@ -76,6 +76,9 @@ function Services() {
             handleFlip={handleCardFlip}
           />
         ))}
+      </div>
+      <div id="text-container">
+        <h2>SERVICIO EXCLUSIVO PARA MAYORES DE 18 AÑOS</h2>
       </div>
     </section>
   );

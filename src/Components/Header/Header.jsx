@@ -18,13 +18,13 @@ export default function Header() {
           <img id="logo-inicio" src={logo} alt={logo.toString()} />
           
           <p id="frase">
-            SOLO UN DESEO NO CAMBIA NADA, UNA DECISIÓN CAMBIA TODO.
+            Solo un deseo no cambia nada, una decisión cambia todo.
           </p>
 
 
               <a className="btn_navbar" href="https://api.whatsapp.com/send?phone=5493541392076" rel="noreferrer" target="_blank">
                 <FaWhatsapp id="whatsapp-icon" />
-                <h6 id="contact">Contactános</h6>
+                <h6 id="contact">Contactanos</h6>
               </a>
 
         </div>

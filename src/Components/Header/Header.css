@@ -58,19 +58,12 @@ position: relative;
 max-width: 100%;
   }
 
-  #frase{
-    margin-top: 20px;
-    color: rgba(255, 255, 255, 0.455) !important;
-    font-weight: 400;
-    font-size: 1rem;
-    font-family: 'Cinzel Decorative';                                              
-  }
 
   #frase{
     margin: 20px;
-    color: rgba(255, 255, 255, 0.777) !important;
+    color: rgba(255, 255, 255) !important;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: 'Cinzel Decorative';                                              
   }
 
@@ -108,16 +101,20 @@ max-width: 100%;
 
 #whatsapp-icon{
     font-size: 25px;
-margin: 0 5px 0 5px;
+margin: 0 5px 0 10px;
+font-weight: bold;
+
 
 }
 
 #contact{
-  margin: 0 5px 0 0;
+  margin: 2px 10px 0 0;
   color: white;
   font-weight: normal;
   }
 
   #contact:hover{
     color: #4dc247;
+  font-weight: bold;
+
     }
