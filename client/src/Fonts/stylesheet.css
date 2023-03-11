@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova'),
+        local('Proxima Nova'),
+        url('ProximaNovaRg.otf');
+    font-weight: 400;
+}
