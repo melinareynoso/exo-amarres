@@ -10,7 +10,7 @@ export default function Especialistas () {
     
     return (
         <section id="Especialistas" className="esp-container">
-            <h2 className="title" >Nuestros especialistasssss</h2>
+            <h2 className="title" >Nuestros especialistas cambios</h2>
             <figure>
                  <img src={Karim}  alt="Especialista"/>
             </figure>
