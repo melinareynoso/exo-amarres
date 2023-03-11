@@ -61,16 +61,16 @@ export default function Navbar() {
 
 
         <nav id="links" ref={navRef} onClick={showNavbar} >
-          <a href="/#Inicio">
+          <a href="#home">
             <p>Inicio</p>
           </a>
-          <a href="/#Servicios">
+          <a href="#Servicios">
             <p>Servicios</p>
           </a>
-          <a href="/#Especialistas">
+          <a href="#Especialistas">
             <p>Especialistas</p>
           </a>
-          <a href="/#Testimonios">
+          <a href="#Testimonios">
             <p>Testimonios</p>
           </a>
         </nav>

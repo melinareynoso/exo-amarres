@@ -1,0 +1,104 @@
+.login {
+    background-image: url('../Login/principal2.png');
+    background-size: cover; /* ajusta el tamaño de la imagen para que cubra el área */
+    background-position: center center; /* centra la imagen en la sección */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .logo {
+    border-radius: 50%;
+    border: 2px solid #5d4c92;
+    height: 120px;
+    width: 120px;
+  }
+  
+  input[type='text'],
+  input[type='password'] {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #5d4c92;
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  button[type='submit'] {
+    background-color: #5d4c92;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button[type='submit']:hover {
+    background-color: #fff;
+    color: #5d4c92;
+    border: 2px solid #5d4c92;
+  }
+
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+
+  .button-home{
+    margin-top: 15px;
+    background-color: #5d4c92;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+  }
+
+  .button-home:hover {
+    background-color: #fff;
+    color: #5d4c92;
+    border: 2px solid #5d4c92;
+  }
+  

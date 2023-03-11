@@ -1,30 +1,48 @@
 import './App.css';
-import Header from './Components/Header/Header';
-import Services from './Components/Servicios/Servicios';
-import Especialistas from './Components/Especialistas/Especialistas';
-import Carousel from './Components/Carousel/Carousel';
-import FooterModal from './Components/Footer/Footer';
-import { FaWhatsapp } from "react-icons/fa";
+import { Route, Routes} from 'react-router-dom';
+import ExoContainer from './Components/ExoContainer/ExoContainer.js';
+import LoginForm from './Components/Login/Login';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import Panel from './Components/Panel/Panel';
+
+import { useEffect} from "react";
+import { useDispatch, useSelector } from 'react-redux'
+import { getAllNumbers } from '../src/redux/actions';
+
+
+
 
 
 function App() {
-  return (
-    <div className="App">
-      <a className="btn-wsp"
-        rel="noopener noreferrer"
-        href="https://api.whatsapp.com/send?phone=5493541392076"
-        target="_blank">
-        <FaWhatsapp id="whatsapp-icon-float" />
-      </a>
-      <Header/>
-      <Services/>
-      <Especialistas/>
-      <Carousel/>
-      <FooterModal/>
-      
-      
 
+
+
+  const dispatch = useDispatch()  
+
+  useEffect(() => {
+
+      dispatch(getAllNumbers());
+      
+    }, [dispatch]);
+  
+
+
+  return (
+    <div className='App' >    
+      <Routes>
+        <Route path="/" element={<ExoContainer />} />
+        <Route
+            path="/panel"
+            element={
+           <PrivateRoute>
+              <Panel />
+          </PrivateRoute>}
+          />
+        <Route  exact path='/login' element={<LoginForm />} />
+        <Route path="*" element={<ExoContainer />} />
+      </Routes>
     </div>
+
   );
 }
 

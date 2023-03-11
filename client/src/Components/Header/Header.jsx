@@ -2,11 +2,18 @@ import React from "react";
 import "./Header.css";
 import logo from "../../images/logo_new.webp.png";
 import { FaWhatsapp } from "react-icons/fa";
+import { useSelector } from 'react-redux'
 import "../../Fonts/stylesheet.css";
 import "../../Fonts/ProximaNovaRg.otf";
 import Navbar from "../Navbar/Navbar";
 
 export default function Header() {
+
+  const Numbers = useSelector(state => state.numbers);
+
+  console.log(Numbers?.number)  
+   
+  
   return (
     <header className="header" id="home">
       <Navbar />
@@ -22,9 +29,15 @@ export default function Header() {
           </p>
 
 
-              <a className="btn_navbar" href="https://api.whatsapp.com/send?phone=5493541392076" rel="noreferrer" target="_blank">
+              <a className="btn_navbar" href={`https://api.whatsapp.com/send?phone=${Numbers?.number}`} rel="noreferrer" target="_blank">
                 <FaWhatsapp id="whatsapp-icon" />
                 <h6 id="contact">Contactanos</h6>
+              </a>
+              <a className="btn-wsp"
+              rel="noopener noreferrer"
+              href={`https://api.whatsapp.com/send?phone=${Numbers?.number}`}
+              target="_blank">
+              <FaWhatsapp id="whatsapp-icon-float" />
               </a>
 
         </div>
