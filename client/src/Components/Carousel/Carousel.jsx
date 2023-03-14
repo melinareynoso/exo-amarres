@@ -28,11 +28,11 @@ export default function carousel() {
             <img className="carousel-image" src={image2} alt="Testimonio" />
           </div>
           <div>
-            {/* <p className="legend">Testimonio 3</p> */}
+            {/* <p className="legend">Testimonios 3</p> */}
             <img className="carousel-image" src={image3} alt="Testimonio" />
           </div>
           <div>
-            {/* <p className="legend">Testimonio 4</p> */}
+            {/* <p className="legend">Testimonios 4</p> */}
             <img className="carousel-image" src={image4} alt="Testimonio" />
           </div>
         </Carousel>
