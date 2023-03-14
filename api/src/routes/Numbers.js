@@ -1,12 +1,14 @@
 const { Router } = require('express');
 const router = Router();
-const { Numbers } = require('../db');
+const { Numbers, User } = require('../db');
 
     //TODO -----> GET a "/numbers" <--------
 
     router.get('/', async (req, res) => {
         try {
+
           const numbersDB = await Numbers.findAll();
+          
       
           if (numbersDB.length) {
             // Devuelve solo el número de la primera fila

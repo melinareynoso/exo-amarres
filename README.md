@@ -1,1 +1,1 @@
-hace npm install por que agregue cositas al package, comente el navbar porque todavia no estaba y me molestaba, te amo y pto el q lo lee
+Habria que poner el repositorio privado por que lleva las credenciales del google, nos pueden hackear hasta las escrituras de la casa. Encargate porfa. :)
