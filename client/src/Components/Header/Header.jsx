@@ -7,11 +7,10 @@ import "../../Fonts/stylesheet.css";
 import "../../Fonts/ProximaNovaRg.otf";
 import Navbar from "../Navbar/Navbar";
 
+
+
 export default function Header() {
-
   const Numbers = useSelector(state => state.numbers);
-
-  console.log(Numbers?.number)  
    
   
   return (
@@ -29,13 +28,13 @@ export default function Header() {
           </p>
 
 
-              <a className="btn_navbar" href={`https://api.whatsapp.com/send?phone=${Numbers?.number}`} rel="noreferrer" target="_blank">
+              <a className="btn_navbar" href={`https://api.whatsapp.com/send?phone=${Numbers}`} rel="noreferrer" target="_blank">
                 <FaWhatsapp id="whatsapp-icon" />
                 <h6 id="contact">Contactanos</h6>
               </a>
               <a className="btn-wsp"
               rel="noopener noreferrer"
-              href={`https://api.whatsapp.com/send?phone=${Numbers?.number}`}
+              href={`https://api.whatsapp.com/send?phone=${Numbers}`}
               target="_blank">
               <FaWhatsapp id="whatsapp-icon-float" />
               </a>

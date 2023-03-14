@@ -6,27 +6,19 @@ import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import Panel from './Components/Panel/Panel';
 
 import { useEffect} from "react";
-import { useDispatch, useSelector } from 'react-redux'
-import { getAllNumbers } from '../src/redux/actions';
-
-
-
+import { useDispatch} from 'react-redux'
+import { getNumbers } from '../src/redux/actions';
 
 
 function App() {
 
-
-
   const dispatch = useDispatch()  
 
   useEffect(() => {
-
-      dispatch(getAllNumbers());
-      
-    }, [dispatch]);
+    dispatch(getNumbers())},
+     [dispatch]
+  );
   
-
-
   return (
     <div className='App' >    
       <Routes>

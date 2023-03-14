@@ -1,55 +1,70 @@
-import { GET_ALL_NUMBERS, LOGIN_SUCCESS, LOGOUT, PSW_INCORRECT } from '../redux/actionTypes';
+import { GET_NUMBERS, LOGIN_SUCCESS, LOGOUT} from '../redux/actionTypes';
 
-import axios from 'axios'
+import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
+import {getFirestore , doc, updateDoc, getDoc} from 'firebase/firestore'
 
-export const getAllNumbers = () => {
+export const getNumbers = () => {
 
-    return async function (dispatch){
-        
-        var result = await axios.get('http://localhost:3004/numbers'); 
-    
-        return dispatch({ 
+  return async function (dispatch) {
+    console.log('probando')
+    const querydb = getFirestore();
+    const queryDoc = doc(querydb, 'number' , 'Aj3Pummhq1hrNDN5ZIIK');
 
-            type: GET_ALL_NUMBERS,
-            payload: result.data
-            
-        })                                                                                                 
+    try {
+      const querySnapshot = await getDoc(queryDoc);
+      const data = querySnapshot.data();
+      console.log(data.Number)
+      return dispatch({
+        type: GET_NUMBERS,
+        payload: data.Number
+      });
+    } catch (error) {
+      console.error(error);
+      return dispatch({
+        type: 'GET_ALL_NUMBERS_FAILURE',
+        payload: error
+      });
     }
-}
-
-
-export const login = (payload) => {
-
-    return async (dispatch) => {
-        try {
-
-            const response = await axios.post('http://localhost:3004/login', payload);
-            const { token } = response.data;
-            
-            dispatch({
-                
-                type: LOGIN_SUCCESS,
-                payload: { token }
-                
-              });
-
-        } catch (error) {
-
-            dispatch({
-                type: PSW_INCORRECT,
-                payload
-                
-              });
-
-            throw new Error('Error en la petición HTTP');
-
-            
-    };
+  };
 };
 
-}
+export const loginUser = (payload) => {
+    
+    console.log(payload)
 
+    return async (dispatch) => {
+      try {
+        
+        const auth = getAuth();
+        const userCredential = await signInWithEmailAndPassword(auth, payload.username, payload.password);
+        const token = await userCredential.user.getIdToken();
+         
+        dispatch({ 
+            type: LOGIN_SUCCESS , 
+            payload: token });
 
+      } catch (error) {
+        console.log(error)
+        throw new Error('Error en la autenticacion, los datos son incorrectos.', error);
+      }
+    };
+  };
+  
+export const updateNumber = (newNumber) => {
+    return async function () {
+      try {
+        const querydb = getFirestore();
+        const docRef = doc(querydb, "number", "Aj3Pummhq1hrNDN5ZIIK");
+        
+        await updateDoc(docRef, { Number: newNumber });
+  
+      } catch (error) {
+
+        console.log(error)
+        throw new Error('Error en la peticion put de Number', error);
+      }
+    };
+  };
 
   export function logout(payload){
 
@@ -58,46 +73,7 @@ export const login = (payload) => {
         payload
     }
 }
-
-
-export const putNumber = (payload) => {
-
-    return async () => {
-
-        try {
-
-            let newNumber = await axios.put('http://localhost:3004/numbers' , payload);
-            
-            return newNumber;
-
-        } catch (error) {
-
-            console.log(error)
-            throw new Error('Error en la peticion put de Number', error);
-            
-    };
- };
-};
-
-export const postNumber = (payload) => {
-
-    return async () => {
-
-        try {
-
-            let newNumber = await axios.post('http://localhost:3004/numbers' , payload);
-            
-            return newNumber;
-
-        } catch (error) {
-
-            console.log(error)
-            throw new Error('Error en la peticion put de Number', error);
-            
-    };
- };
-};
-
+  
 
 
 

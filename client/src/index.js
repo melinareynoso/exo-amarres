@@ -5,6 +5,7 @@ import { createRoot } from 'react-dom/client'; // importar createRoot desde "rea
 import reportWebVitals from './reportWebVitals';
 import store from './redux/store';
 import App from './App';
+import './firebase/config'
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
